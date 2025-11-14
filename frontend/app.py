@@ -410,7 +410,7 @@ with col1:
     
     if uploaded:
         img = Image.open(uploaded)
-        st.image(img, caption="Uploaded X-ray Image", width='stretch')
+        st.image(img, caption="Uploaded X-ray Image", use_column_width=True)
         
         # Image info
         st.markdown("**Image Information:**")
@@ -420,7 +420,8 @@ with col2:
     st.markdown("### Analysis Results")
     
     if uploaded:
-        if st.button("Analyze Image", width='stretch'):
+        if st.button("Analyze Image", use_container_width=True):
+
             with st.spinner("Processing image and running AI analysis..."):
                 # Preprocess and predict
                 pre = preprocess(img)
