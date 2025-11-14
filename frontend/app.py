@@ -255,7 +255,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-MODEL_PATH = "model/saved_model/v2"
+MODEL_PATH = "frontend/model/saved_model/v2"
 
 # ChestMNIST class labels (14 pathologies)
 CLASS_LABELS = [
